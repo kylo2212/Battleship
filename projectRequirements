@@ -1,0 +1,42 @@
+	REQUIREMENTS - BASIC GAME
+x	battleship.java
+x	actiongame.java
+x	gameboard.java
+x	five ships/#holes: 5-1, 4-1, 3-2, 2-1
+x	"ship types: carrier, battleship, destroyer, sub, patrol"
+?	ship info stored as constants
+?	ship info stored in array
+x	randomly generate locations - ships
+x	ship cannot extend off edge of board
+x	only one ship can occupy a cell
+x	each ship when printed should have letter code
+x	print intial game board-visible ship placement 
+x	game board must be square (same #cols/rows)
+x	must use at least one 2D array to manage game board
+x	columns must be labeled with numbers
+x	rows much be a labeled with letters
+x	limit number of missile per game
+x	Allow user to select level of difficulty - three size options
+x	gameboard 6x6 = 30 missiles
+x	gameboard 9x9 = 50 missiles
+x	gameboard 12x12 = 75 missiles
+x	prompt user for cell to attack - row and col
+x	if ship hit, indicate a hit and increase shot count
+x	if hit, display type of ship hit and congrats user
+	if hit, update cell status and redisplay board
+	if hit "sinks" the ship, update board showing sunk ship
+	if hit "sinks" the ship, congratulate user and message ship type and name.
+	if hit "sinks" the ship, tell user how many more ships remain that need sinking
+x	if ship missed, indicate a miss/decrease shot count
+x	if miss, ridicule the user 
+	if miss, update cell status and redisplay board
+	if cell had previously been fired upon, call user a bozo
+x	after each selection, update display with remaining missiles, remaining ships and user's accuracy(hits/fired)
+	user wins if ships sunk before missiles gone
+	computer wins if all missiles used up first
+	
+	Requirements - Bonus Points
+	computermove.java
+	computer randomly popularate user board
+	you/computer take turns guessing on each others grid
+	first to sink oppenents ships w/o running out of missiles wins, otherwise both run out of missiles, player with hits most wins
